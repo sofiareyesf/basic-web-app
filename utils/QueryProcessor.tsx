@@ -7,5 +7,10 @@ export default function QueryProcessor(query: string): string {
     );
   }
 
+  // Add support for the "What is your Andrew ID?" query
+  if (query.toLowerCase() === "what is your andrew id?") {
+    return "My Andrew ID is [Your Andrew ID]"; // Replace with your actual Andrew ID
+  }
+
   return "";
 }
